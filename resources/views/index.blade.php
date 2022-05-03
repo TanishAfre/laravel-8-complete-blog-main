@@ -5,7 +5,7 @@
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                    Do you want to become a developer?
+                    Want to know more about apple products?
                 </h1>
                 <a 
                     href="/blog"
@@ -18,20 +18,20 @@
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
+            <img src="https://cdn.cnn.com/cnnnext/dam/assets/111006055359-apple-logo-new-york.jpg" width="700" alt="">
         </div>
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
-                Struggling to be a better web developer?
+                Looking for a new phone?
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+                We can help with good iphone suggestion.
             </p>
 
             <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+                Click below to know more!
             </p>
 
             <a 
@@ -44,20 +44,20 @@
 
     <div class="text-center p-15 bg-black text-white">
         <h2 class="text-2xl pb-5 text-l"> 
-            I'm an expert in...
+            What will you find in our website : 
         </h2>
 
         <span class="font-extrabold block text-4xl py-1">
-            Ux Design
+            Which is the best apple product.
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Project Management
+            Its Cost.
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Digital Strategy
+            Comparison with other products.
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Backend Development
+            Best place to buy it.
         </span>
     </div>
 
@@ -76,23 +76,25 @@
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
-        <div class="flex bg-yellow-700 text-gray-100 pt-10">
-            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
+        @foreach($posts->slice(0,2) as $post)
+            <div class="flex bg-yellow-700 text-gray-100 pt-10">
+                <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="uppercase text-xs">
-                    PHP
+                    {{$post->title}}
                 </span>
 
                 <h3 class="text-xl font-bold py-10">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus dolorum error culpa laboriosam. Enim voluptas earum repudiandae consequuntur ad? Expedita labore aspernatur facilis quasi ex? Nemo hic placeat et?
+                    {{Str::limit($post->description,150, $end='.....')}}
                 </h3>
 
-                <a 
-                    href=""
-                    class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
-                    Find Out More
+                <a
+                href="/blog/{{$post->slug}}"
+                class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
+                Find Out More
                 </a>
+                </div>
             </div>
-        </div>
+        @endforeach
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
         </div>
