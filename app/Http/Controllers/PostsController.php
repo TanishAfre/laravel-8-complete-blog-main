@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Cviebrock\EloquentSluggable\Services\SlugService;
+use App\Models\Comment;
 
 class PostsController extends Controller
 {
@@ -74,7 +75,8 @@ class PostsController extends Controller
     public function show($slug)
     {
         return view('blog.show')
-            ->with('post', Post::where('slug', $slug)->first());
+            ->with('post', Post::where('slug', $slug)->first())
+            ->with('comments', Comment::where('post_slug','=',$slug)->get());
     }
 
     /**

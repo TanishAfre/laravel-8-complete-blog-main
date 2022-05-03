@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\CommentsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,7 @@ Route::post('/favorite/{slug}/{user_id}',
 
 Route::get('/favorites', 
     [App\Http\Controllers\PostsController::class, 'favorites']);
+
+Route::post('/blog/{slug}/comments',[CommentsController::class,'store']);
+
+Route::delete('/comments/{comment}',[CommentsController::class,'destroy']);
