@@ -36,7 +36,7 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="/">
+                    <a href="/aboutus">
                         What we do
                     </a>
                 </li>
@@ -88,6 +88,6 @@
         </div>
     </div>
     <p class="w-25 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6">
-        Copyright 2017-2021 Code With Dary. All Rights Reserved
+        Copyright 2022 Code of Tanish Afre. All Rights Reserved
     </p>
 </footer>
