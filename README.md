@@ -9,6 +9,8 @@
 ## Favouraite Section Feature
 ![index](https://raw.githubusercontent.com/TanishAfre/laravel-8-complete-blog-main/master/Images/comment%20Section.png?raw=true)
 
+## Favorite blog posts
+![index](https://raw.githubusercontent.com/TanishAfre/laravel-8-complete-blog-main/master/Images/favourait.png?raw=true)
 
 
 •	Author: Code With Dary <br>
