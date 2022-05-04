@@ -1,6 +1,15 @@
 ## Laravel Apple Produsts Blog
 ![index](https://raw.githubusercontent.com/TanishAfre/laravel-8-complete-blog-main/b12a0d89d512d664b8851a0eae99ff05541edb42/webPage.png?raw=true)
 
+## Features in blog
+• Comment on blog posts <br>
+• Create and edit blog posts <br>
+• Favorite blog posts <br>
+
+## Favouraite Section Feature
+
+
+
 
 •	Author: Code With Dary <br>
 •	Twitter: [@codewithdary](https://twitter.com/codewithdary) <br>
