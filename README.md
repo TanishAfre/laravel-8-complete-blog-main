@@ -1,6 +1,6 @@
-## Laravel 8 Complete Blog
+## Laravel Apple Produsts Blog
+![index](https://raw.githubusercontent.com/TanishAfre/laravel-8-complete-blog-main/b12a0d89d512d664b8851a0eae99ff05541edb42/webPage.png?raw=true)
 
-This repository is linked to [this youtube video](https://www.youtube.com/watch?v=HKJDLXsTr8A&t=4710s) where I show you how to create a complete blog in Laravel 8 using best practices.
 
 •	Author: Code With Dary <br>
 •	Twitter: [@codewithdary](https://twitter.com/codewithdary) <br>
